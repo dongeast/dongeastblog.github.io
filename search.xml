@@ -61,25 +61,6 @@
     
     
     <entry>
-      <title>第一章-传感器与检测技术概述</title>
-      <link href="2020/09/23/%E4%BC%A0%E6%84%9F%E5%99%A8%E4%B8%8E%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0/"/>
-      <url>2020/09/23/%E4%BC%A0%E6%84%9F%E5%99%A8%E4%B8%8E%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0/</url>
-      
-        <content type="html"><![CDATA[<p>###传感器起源于仿生研究<br>    1）传感器位于研究对象与测控系统之间的接口位置，是感知、获取与检测信息的窗口。<br>    2）感知、通信和计算（采集、传输、处理）是ICT（Information and Communications Technology）技术的三大支柱。<br>    3）传感器是实现对物理环境或人类社会信息获取的基本工具，是检测系统的首要环节，是信息链的源头。（爬虫也算一种传感器）</p><p>###传感器的定义与组成<br>    1）根据我国标准传感器定义为：能感受被测量并按照一定规律转换成可用输出信号的器件或装置，通常由敏感元件和转换元件组成。<br>    2）敏感元件是指传感器中能直接感受或相应被测量的部分；<br>    3）转换原件是指传感器中能将敏感元件感受或相应的被测量转换成适于传输或测量的电信号部分；<br>    4）当输出为规定的标准信号时，则被称为变送器。<br>    5）传感器的共性就是利用物理定律或物质的物理、化学或生物特性，将非电量（如位移、加速度、速度、力等）输入转换成电量（电压、电流、频率、电荷、电容、电阻等）输出。</p><p>##传感器的基本组成部分为敏感元件和转换元件两部分，分别完成检测和转换两个基本功能。<br>    1）并不是所有传感器都能明显的区分这两个部分。他们可能直接将被测量直接转换为电信号输出，即合二为一。<br>    2）只由这两部分组成的传感器通常输出的信号较弱，还需要信号调理和转换电路将输出信号进行放大并转换为容易传输、处理、记录、显示的形式</p><p>##信号调理与转换电路的作用：<br>    1）把来自传感器的信号进行转移和放大<br>    2）进行信号处理</p><p>利用电路中电信号的强弱传送信息的方法称为电传送。</p><p>#传感器技术的发展趋势：传感器的无线化、微型化、集成化、网络化、智能化、安全化、虚拟化</p><p>#改善传感器性能的技术途径：<br>1.寻找新原理<br>2.开发新材料<br>3.采用新工艺<br>4.探索新功能</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 传感器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>My First</title>
       <link href="2020/09/22/My-First/"/>
       <url>2020/09/22/My-First/</url>
