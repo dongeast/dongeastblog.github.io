@@ -6,7 +6,7 @@
   <link href="https://dongeast.github.io/atom.xml" rel="self"/>
   
   <link href="https://dongeast.github.io/"/>
-  <updated>2020-09-23T13:31:03.378Z</updated>
+  <updated>2020-09-24T01:22:25.070Z</updated>
   <id>https://dongeast.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第1章-数据库系统绪论</title>
+    <link href="https://dongeast.github.io/2020/09/24/%E7%AC%AC1%E7%AB%A0-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%BB%AA%E8%AE%BA/"/>
+    <id>https://dongeast.github.io/2020/09/24/%E7%AC%AC1%E7%AB%A0-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%BB%AA%E8%AE%BA/</id>
+    <published>2020-09-24T00:31:09.000Z</published>
+    <updated>2020-09-24T01:22:25.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;数据（data）、数据库（DB）、数据库管理系统（DBMS）和数据库系统（DBS）是与数据库技术密切相关的4个基本概念。&lt;br&gt;   </summary>
+        
+      
+    
+    
+    
+    
+    <category term="数据库" scheme="https://dongeast.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>第2章-传感器的基本特性</title>
@@ -44,14 +67,14 @@
     <link href="https://dongeast.github.io/2020/09/23/51%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/"/>
     <id>https://dongeast.github.io/2020/09/23/51%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/</id>
     <published>2020-09-23T07:29:04.000Z</published>
-    <updated>2020-09-23T15:16:27.696Z</updated>
+    <updated>2020-09-24T00:27:59.772Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;单片机简介&quot;&gt;&lt;a href=&quot;#单片机简介&quot; class=&quot;headerlink&quot; title=&quot;单片机简介&quot;&gt;&lt;/a&gt;单片机简介&lt;/h1&gt;&lt;p&gt;​单片机是就是在一片半导体硅片上，集成了&lt;br&gt;    中央处理单元（CPU）&lt;br&gt;   </summary>
+    <summary type="html">&lt;h1 id=&quot;单片机简介&quot;&gt;&lt;a href=&quot;#单片机简介&quot; class=&quot;headerlink&quot; title=&quot;单片机简介&quot;&gt;&lt;/a&gt;单片机简介&lt;/h1&gt;&lt;h4 id=&quot;单片机是就是在一片半导体硅片上，集成了&quot;&gt;&lt;a href=&quot;#单片机是就是在一片半导体硅片上，集成了&quot;</summary>
         
       
     
