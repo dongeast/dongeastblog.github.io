@@ -6,7 +6,7 @@
   <link href="https://dongeast.github.io/atom.xml" rel="self"/>
   
   <link href="https://dongeast.github.io/"/>
-  <updated>2020-09-24T09:29:32.224Z</updated>
+  <updated>2020-09-25T05:30:56.670Z</updated>
   <id>https://dongeast.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JSP文件的结构</title>
+    <link href="https://dongeast.github.io/2020/09/25/JSP%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84/"/>
+    <id>https://dongeast.github.io/2020/09/25/JSP%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84/</id>
+    <published>2020-09-25T03:53:53.000Z</published>
+    <updated>2020-09-25T05:30:56.670Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在传统的网页HTML（.htm、.html）中加入Java程序片段，就构成了JSP网页（.JSP）。&lt;/p&gt;
+&lt;h4 id=&quot;创建第一个JSP文件&quot;&gt;&lt;a href=&quot;#创建第一个JSP文件&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="JSP网页开发" scheme="https://dongeast.github.io/tags/JSP%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>第1章-数据库系统绪论</title>
@@ -68,7 +92,7 @@
     <link href="https://dongeast.github.io/2020/09/23/51%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/"/>
     <id>https://dongeast.github.io/2020/09/23/51%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/</id>
     <published>2020-09-23T07:29:04.000Z</published>
-    <updated>2020-09-24T09:30:34.331Z</updated>
+    <updated>2020-09-25T05:33:15.244Z</updated>
     
     
       
