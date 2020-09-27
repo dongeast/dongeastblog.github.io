@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Java学习笔记</title>
+      <link href="2020/09/27/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>2020/09/27/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Java语言的发展史"><a href="#Java语言的发展史" class="headerlink" title="Java语言的发展史"></a>Java语言的发展史</h4><pre><code>Java5.0——更新力度最大Java8.0——公司使用最多Java11.0——学习使用的版本</code></pre><h4 id="Java跨平台原理"><a href="#Java跨平台原理" class="headerlink" title="Java跨平台原理"></a>Java跨平台原理</h4><pre><code>在需要运行Java应用程序的操作系统上，安装一个与操作系统对应的Java虚拟机（JVM）即可。</code></pre><h4 id="JRE和JDK"><a href="#JRE和JDK" class="headerlink" title="JRE和JDK"></a>JRE和JDK</h4><pre><code>Java Runtime Environment   是Java程序运行时的环境和运行时所需要的核心类库。Java Development Kit       是Java程序开发工具包，包含JRE和开发人员使用的工具。其中的开发工具：编译工具和运行工具。</code></pre><h4 id="JDK的下载和安装"><a href="#JDK的下载和安装" class="headerlink" title="JDK的下载和安装"></a>JDK的下载和安装</h4><pre><code>针对不同的操作系统下载JDK，注意版本问题。JDK的安装路径不要包含中文和空格，所有开发工具最好统一安装管理。</code></pre><h5 id="JDK安装后文件"><a href="#JDK安装后文件" class="headerlink" title="JDK安装后文件"></a>JDK安装后文件</h5><pre><code>bin   JDK的各种工具命令，包含javac和javaconf   JDK的相关配置文件include   一些平台特定的头文件jmods   JDK的各种模块legal   JDK各模块的授权文档lib   JDK工具的一些补充JAR包————————————————————＊其余为说明性文档</code></pre><h4 id="常用的DOS命令"><a href="#常用的DOS命令" class="headerlink" title="常用的DOS命令"></a>常用的DOS命令</h4><pre><code>按下win+R打开搜索，输入cmd八个命令：    “盘符：”+回车    盘符切换    dir             查看当前路径下的内容    cd 目录            进入单级目录    cd ..            回退到上级目录    cd \            回退到盘符目录    cls                清屏    exit            退出命令行窗口</code></pre><h4 id="Path环境变量"><a href="#Path环境变量" class="headerlink" title="Path环境变量"></a>Path环境变量</h4><pre><code>开发Java程序，需要使用JDK提供的开发工具，而这些工具在JDK的安装目录的bin目录下。我们需要使用java和javac这两个工具来完成编译和运行。在命令行使用：输入全部完整路径。配置好环境变量就可以直接使用了。</code></pre><h4 id="开发Java程序"><a href="#开发Java程序" class="headerlink" title="开发Java程序"></a>开发Java程序</h4><pre><code>需要三个步骤：    编写程序：记事本    编译程序：编译器        javac命令    运行程序：运行        java命令</code></pre><h5 id="HelloWorld案例编写："><a href="#HelloWorld案例编写：" class="headerlink" title="HelloWorld案例编写："></a>HelloWorld案例编写：</h5><pre><code>文本文件后缀名为    .javapublic class HelloWorld{    public static void main(String[] args){        System.out.println("HelloWorld!")    }}</code></pre><p>保存退出—&gt;所在目录javac HelloWorld.java（文件名.java）—&gt;java HelloWorld(类名)</p><h5 id="解决-分析-总结BUG"><a href="#解决-分析-总结BUG" class="headerlink" title="解决-分析-总结BUG"></a>解决-分析-总结BUG</h5><h4 id="Notepad软件的安装和使用"><a href="#Notepad软件的安装和使用" class="headerlink" title="Notepad软件的安装和使用"></a>Notepad软件的安装和使用</h4><pre><code>显示行号，方便调试；</code></pre><h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><p>注释是在指定位置添加的<strong>说明性信息</strong><br>不参与程序的运行，仅仅起到说明作用。</p><p>注释的分类：</p><pre><code>单行注释：/    /多行注释：/*    */文档注释：/**    */</code></pre><h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4><p>关键字就是被Java语言赋予了特定含义的单词。<br>关键字的字母全部小写。<br>常用的代码编辑器对关键字有特殊颜色标记，很直观。</p><h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><p>在程序运行中，其值不可改变的量。</p><pre><code>字符串常量：用双引号括起来的内容。整数常量：不带小数的数字。小数常量：带小数的数字。字符常量：用单引号括起来的内容。布尔常量：布尔值，表示真假。空常量：一个特殊的值，空值，值是null。</code></pre><p>空常量是不能直接输出的。</p><h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>计算机存储设备的最小信息单元是<strong>位</strong>；<br>计算机中的最小的存储单元叫<strong>字节</strong>；</p><p>Java语言是强类型语言，对于每一种数据都给出了明确的数据类型，不同数据类型也分配了不同的内存空间，所以他们表示的数据大小也是不一样的。</p><p>自动数据类型转换：</p><pre><code>byte b = 10;short s = b;int i = b;</code></pre><p>强制类型转换：</p><pre><code>int k = (int)88.88;</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件理论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JSP文件的结构</title>
       <link href="2020/09/25/JSP%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84/"/>
       <url>2020/09/25/JSP%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84/</url>
