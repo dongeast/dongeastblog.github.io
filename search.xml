@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>VMware安装Mac OS教程</title>
+      <link href="2020/09/28/VMware%E5%AE%89%E8%A3%85Mac-OS%E6%95%99%E7%A8%8B/"/>
+      <url>2020/09/28/VMware%E5%AE%89%E8%A3%85Mac-OS%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<p>早些时候苹果已经推出macOS Catalina (10.15)正式版 , 有兴趣进行体验的网友自然也可以通过虚拟机安装测试。</p><p>借助虚拟机类软件我们可以非常便捷的在各个平台上安装其他系统 , 例如在Windows里安装安卓/Linux/macOS。</p><p>本文主要介绍的是使用VMware Workstation for Windows 安装macOS , 有现成的磁盘映像因此部署非常简单。</p><h3 id="通过VM虚拟机快速安装macOS-Catalina-10-15-版"><a href="#通过VM虚拟机快速安装macOS-Catalina-10-15-版" class="headerlink" title="通过VM虚拟机快速安装macOS Catalina (10.15)版"></a>通过VM虚拟机快速安装macOS Catalina (10.15)版</h3><h4 id="准备工作和下载磁盘映像："><a href="#准备工作和下载磁盘映像：" class="headerlink" title="准备工作和下载磁盘映像："></a>准备工作和下载磁盘映像：</h4><p>1.在下载磁盘映像前建议您点击地址栏右侧的星标或使用快捷键Ctrl+D将本文加入书签防止喝杯咖啡回来找不到。</p><p>2.下次磁盘映像：点击这里 6.18 GB 密码：obn7  , 文件较大速度较慢添加下载任务后需要耐心的等待下载完成。</p><p>3.磁盘映像说明：此文件是国外网站TechsViewer打包的.VMDK映像 , 版本为10.15 Beta你可以安装完成再升级。</p><p>4.添加系统支持：点击这里下载Unlocker v3.2版 , 此开源软件可以为VM虚拟机添加 Apple macOS 系统的支持。</p><p>5.硬件性能说明：如果想要流畅的在虚拟机里体验macOS的话 ,  物理机内存建议8GB最好16GB、四核心处理器。</p><h4 id="为VM添加macOS支持："><a href="#为VM添加macOS支持：" class="headerlink" title="为VM添加macOS支持："></a>为VM添加macOS支持：</h4><p>下载Unlocker V3.2压缩包后将其完全解压到桌面 ,  然后找到win-install.cmd文件右键点击使用管理员权限运行。</p><p>此过程需联网且下载文件过程可能较慢请耐心等待命令执行完毕，待脚本提示按任意键退出的时候代表安装完成。</p><p>此时再打开VMware Workstation新建虚拟机时就可以发现有 Apple Mac OS 以及macOS 10.14版的支持信息。</p><p>[图文教程] 通过VM虚拟机快速安装macOS Catalina (10.15)版</p><h4 id="处理以下载的磁盘映像文件："><a href="#处理以下载的磁盘映像文件：" class="headerlink" title="处理以下载的磁盘映像文件："></a>处理以下载的磁盘映像文件：</h4><p>下载的磁盘映像文件使用 WinRAR 进行压缩的因此需要解压 , 压缩的原因主要是这个磁盘映像体积高达32.5 GB。</p><p>如果直接上传并分享给大家的且不说上传需要耗费大量时间等，估计大家下载也得挂机很长时间才能完成下载吧。</p><p>使用压缩工具将压缩包打开即可看到里面VMDK格式的磁盘映像，将其放到桌面上等会儿我们新建虚拟机再使用。</p><h4 id="开始通过磁盘映像安装系统："><a href="#开始通过磁盘映像安装系统：" class="headerlink" title="开始通过磁盘映像安装系统："></a>开始通过磁盘映像安装系统：</h4><p>1.打开VMware Workstation并点击左上角的文件里面的新建虚拟机选项 , 在新建虚拟机向导里选择自定义选项。</p><p>2.在安装客户机操作系统里我们选择稍后安装操作系统选项，因为我们没有光盘映像所以这里先不需要进行配置。</p><p>3.在选择客户机操作系统里选择Apple Mac OS并在版本里选择macOS 10.14 ,   虽然我们安装10.15但这不影响。</p><p>[图文教程] 通过VM虚拟机快速安装macOS Catalina (10.15)版</p><p>4.在命名虚拟机里可以自定义设置虚拟机名称和位置，此虚拟机需要较大空间建议放在剩余空间较大的固态盘上。</p><p>5.在处理器配置里建议处理器数量设置2内核数量设置2 , 如果你的处理器核心数更多可以继续增加可提高流畅性。</p><p>6.在虚拟机内存里建议设置至少6144MB (6GB)内存，其中处理器核心与内存及是否为固态盘对流畅性影响较高。</p><p>7.在网络类型里使用默认的NAT网络地址转换即可，如果你有需要的话亦可选择桥接网络让虚拟机与物理机同级。</p><p>8.在磁盘类型选项里默认为SATA选项请不要更改，即便是 NVMe 固态盘也不要修改此选项否则无法启动虚拟机。</p><p>9.在选择磁盘里点击使用现有的虚拟磁盘点击下一步，接着点击浏览然后选择刚刚解压在桌面的VMDK映像即可。</p><p>10.很重要的步骤：配置完成后先不要开启虚拟机，转到虚拟机目录找到虚拟机名称.vmx 文件用代码编辑器打开。</p><h4 id="在VMX文件结尾添加此段代码并保存，请注意双引号是英文半角的"><a href="#在VMX文件结尾添加此段代码并保存，请注意双引号是英文半角的" class="headerlink" title="在VMX文件结尾添加此段代码并保存，请注意双引号是英文半角的"></a>在VMX文件结尾添加此段代码并保存，请注意双引号是英文半角的</h4><p>smc.version = “0”</p><p>开启虚拟机进行安装和配置：<br>1.开启虚拟机若出现苹果标志但没有进度条或无法显示安装步骤，请点击虚拟机菜单栏的选项将虚拟机进行关机。</p><p>2.关机后点击编辑虚拟机设置然后点击选项，在右侧客户机操作系统里选择Windowsx64然后点击确定进行保存。</p><p>3.设置后再次开机看看出现苹果标志后是否有进度条 , 如果没有的话再改回macOS 10.14然后重复操作进行测试。</p><p>4.成功出现进度条后就会显示如下的安装界面，此过程需要 5~10 分钟请耐心等待，安装完成后会自动进行重启。</p><p>5.区域里选择中国大陆然后在语言里点击自定义配置，需添加简体中文并将简体中文拖放到第一位即英语的上方。</p><p>6.上述语言和地区相关的配置亦可安装完成后再调整，常规选项按相关提示进行操作即可这里不再截图进行说明。</p><p>7.部署完成后必须登录苹果账号，如果你有Apple ID可直接登录，如果没有请在对应页面按照提示注册苹果账户。</p><p>8.苹果账户密码与macOS的密码是不同的(用户名可以相同)，并且设置 macOS 密码还需要与苹果账户密码不同。</p><p>9.成功登录系统后可以在系统偏好设置的语言和地区里切换中国大陆和简体中文，保存重启系统即变成中文界面。</p><h3 id="解决分辨率无法调整-无法全屏幕运行："><a href="#解决分辨率无法调整-无法全屏幕运行：" class="headerlink" title="解决分辨率无法调整/无法全屏幕运行："></a>解决分辨率无法调整/无法全屏幕运行：</h3><p>下载Darwin.iso文件然后关闭macOS 虚拟机，点击编辑虚拟机设置并在 CD/DVD 里添加ISO映像文件。</p><p>如下图：设备状态勾选启动时连接选项，使用ISO 映像文件里点击浏览然后选择我们刚刚下载的Darwin.iso即可。</p><p>重新开启macOS虚拟机然后在访达(底部蓝白笑脸)的位置里点击VMware Tools即可看到相关的安装选项如下图：</p><p>双击安装VMware Tools 同意相关协议、输入macOS 密码进行安装，此步骤会触发安全限制需按提示进行解除。</p><p>解除安装限制 : 点击底部的齿轮按钮转到macOS设置选项 , 在安全与隐私里点击左下角锁输入密码即可进行解除。</p><p>成功安装VMware Tools 后按提示重启系统，重启完成进入系统后点击VMware菜单栏查看的全屏即可实现全屏。</p><p>最后还有个步骤：关闭虚拟机点击编辑虚拟机在CD/DVD里将启动时连接取消勾选，对应.ISO文件直接删除即可。</p><p>MAC(109)macOS(59)VMware(20)虚拟机(41)</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系统安装 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java知识点速记</title>
       <link href="2020/09/27/Java%E7%9F%A5%E8%AF%86%E7%82%B9%E9%80%9F%E8%AE%B0/"/>
       <url>2020/09/27/Java%E7%9F%A5%E8%AF%86%E7%82%B9%E9%80%9F%E8%AE%B0/</url>
