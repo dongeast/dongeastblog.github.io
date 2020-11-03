@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: JSP网页开发, Dongeast">
+    <meta name="keywords" content="分类, Dongeast">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: JSP网页开发 | Dongeast</title>
+    <title>分类 | Dongeast</title>
     <link rel="icon" type="image/png" href="/favicon1.1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -352,133 +352,118 @@
 
     
 
-<div id="tags" class="container chip-container">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E4%BC%A0%E6%84%9F%E5%99%A8/" title="传感器: 2">
+                
+                <a href="/categories/%E7%A1%AC%E4%BB%B6%E7%90%86%E8%AE%BA/" title="硬件理论: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="传感器" style="background-color: #F9EBEA;">传感器
-                        <span class="tag-length">2</span>
+                            style="background-color: #F9EBEA;">硬件理论
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" title="单片机: 1">
+                <a href="/categories/%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA/" title="软件理论: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="单片机" style="background-color: #F5EEF8;">单片机
+                            style="background-color: #F5EEF8;">软件理论
+                        <span class="tag-length">4</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C/" title="软件测试实验: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">软件测试实验
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="数据库: 1">
+                <a href="/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" title="系统安装: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="数据库" style="background-color: #D5F5E3;">数据库
+                            style="background-color: #E8F8F5;">系统安装
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
-                
-                <a href="/tags/%E6%8C%87%E4%BB%A4/" title="指令: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="指令" style="background-color: #E8F8F5;">指令
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%B5%8B%E8%AF%95/" title="测试: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="测试" style="background-color: #FEF9E7;">测试
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/JSP%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/" title="JSP网页开发: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="JSP网页开发" style="background-color: #F8F9F9;">JSP网页开发
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/Java/" title="Java: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Java" style="background-color: #82E0AA;">Java
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/Mac/" title="Mac: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Mac" style="background-color: #D7BDE2;">Mac
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
                 
             </div>
         </div>
     </div>
 </div>
 
+
+    
+    <style type="text/css">
+    #category-radar {
+        width: 100%;
+        height: 360px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="category-radar" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
+<script type="text/javascript">
+    let radarChart = echarts.init(document.getElementById('category-radar'));
+
     
 
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="JSP网页开发" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2020/09/25/JSP%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="JSP文件的结构">
-                            
-                            <span class="card-title">JSP文件的结构</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA/" class="post-category">
-                                软件理论
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </article>
+    let option = {
+        title: {
+            left: 'center',
+            text: '文章分类雷达图',
+            textStyle: {
+                fontWeight: 500,
+                fontSize: 22
+            }
+        },
+        tooltip: {},
+        radar: {
+            name: {
+                textStyle: {
+                    color: '#3C4858'
+                }
+            },
+            indicator: [{"name":"硬件理论","max":5},{"name":"软件理论","max":5},{"name":"软件测试实验","max":5},{"name":"系统安装","max":5}],
+            nameGap: 5,
+            center: ['50%','55%'],
+            radius: '66%'
+        },
+        series: [{
+            type: 'radar',
+            color: ['#3ecf8e'],
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data : [
+                {
+                    value : [3,4,1,1],
+                    name : '文章分类数量'
+                }
+            ]
+        }]
+    };
+
+    radarChart.setOption(option);
+</script>
+
+    
+
 </main>
-
-
 
 
     <footer class="page-footer bg-color">
